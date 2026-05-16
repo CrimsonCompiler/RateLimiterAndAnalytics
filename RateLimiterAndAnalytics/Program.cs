@@ -11,6 +11,10 @@ namespace RateLimiterAndAnalytics
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
+            // Middleware
+            app.UseMiddleware<RateLimitingMiddleware>();
+
+
             List<string> students = new List<string>
             {
                 "Tousif","Anika", "Tasrik"
