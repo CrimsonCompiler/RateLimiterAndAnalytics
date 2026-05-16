@@ -3,6 +3,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace RateLimiterAndAnalytics
 {
